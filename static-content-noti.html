@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- description -->
+    <meta name='description' content='webgiare'>
+    <meta property='og:description' content='webgiare'>
+    <meta name='twitter:description' content='webgiare'>
+
+    <meta property='og:site_name' content='webgiare'>
+    <meta property='og:type' content='website'>
+
+    <!-- image -->
+    <meta property="og:image" content="./image/logo.png">
+    <meta property="og:image:alt" content="./image/logo.png">
+    <meta name="twitter:image" content="./image/logo.png">
+    <!-- Minimal -->
+    <link rel='icon' type='image/png' href='./image/logo_o.png'>
+    <link rel='icon' sizes='192x192' href='./image/logo_o.png'> <!-- web -->
+    <link rel='apple-touch-icon' href='./image/logo_o.png'>
+    <meta name='msapplication-square310x310logo' content='./image/logo_o.png'>
+
+    <title>webgiare admin</title>
+    <!-- title -->
+    <meta property='og:title' content='webgiare'>
+    <meta name='twitter:title' content='webgiare'>
+
+
+    <!-- /*-----*-----*-- setup-lib-css --*-----*-----*/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="asset/setup.css">
+
+    <!-- /*-----*-----*-- component --*-----*-----*/ -->
+    <link rel="stylesheet" href="./cms/style/header-footer.css">
+    <link rel="stylesheet" href="./cms/style/body.css">
+
+    <!-- /*-----*-----*-- edit-style --*-----*-----*/ -->
+    <link rel="stylesheet" href="edit-style/index.css">
+
+
+    <!-- /*-----*-----*-- important --*-----*-----*/ -->
+    <link rel="stylesheet" href="asset/style.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-contain d-flex justify-content-between">
+            <div class="wrap-logo">
+                <a href="#" target="_blank">
+                    <img src="./cms/images/index/home.png" alt="">
+                    <span>brand</span>
+                </a>
+            </div>
+            <div class="profile-user relative">
+                <a href="#" class="profile-btn my-dropdown-button" dropdown-menu-name="#profile">
+                    <span>admin</span>
+                    <img src="./cms/images/index/profile-user.png" alt="">
+                </a>
+                <div class="dropdown-child-buble wrap-list list-style-1 d-none" id="profile">
+                    <ul>
+                        <li><a href="#">Đổi mật khẩu</a></li>
+                        <li><a href="#">Đăng xuất</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="body-contain d-flex">
+            <div class="wrap-sidebar">
+                <div class="sidebar">
+                    <ul>
+                        <li>
+                            <div class="line">
+                                <a href="#">tài khoản</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="line active">
+                                <a href="#">
+                                    <span>nội dung tĩnh</span>
+                                </a>
+                                <a href="#" class="wrap-arrow my-dropdown-button" dropdown-menu-name="#name1">
+                                    <img class="arrow-down" src="./cms/images/index/arrow-down.png" alt="">
+                                </a>
+                            </div>
+                            <div class="wrap-child d-none" id="name1">
+                                <ul>
+                                    <li class=""><a href="#">danh sách</a></li>
+                                    <li><a href="#">thông báo</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="line">
+                                <a href="#">
+                                    <span>bài viết</span>
+                                </a>
+                                <a href="#" class="wrap-arrow my-dropdown-button" dropdown-menu-name="#name2">
+                                    <img class="arrow-down" src="./cms/images/index/arrow-down.png" alt="">
+                                </a>
+                            </div>
+                            <div class="wrap-child d-none" id="name2">
+                                <ul>
+                                    <li><a href="#">danh sách</a></li>
+                                    <li><a href="#">cài đặt hiển thị</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="line">
+                                <a href="#">Thư viện ảnh</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="line">
+                                <a href="#">
+                                    <span>sản phẩm</span>
+                                </a>
+                                <a href="#" class="wrap-arrow my-dropdown-button" dropdown-menu-name="#name4">
+                                    <img class="arrow-down" src="./cms/images/index/arrow-down.png" alt="">
+                                </a>
+                            </div>
+                            <div class="wrap-child d-none" id="name4">
+                                <ul>
+                                    <li><a href="#">danh mục sản phẩm</a></li>
+                                    <li><a href="#">sản phẩm</a></li>
+                                    <li><a href="#">cài đặt hiển thị</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="line">
+                                <a href="#">custom</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="main">
+
+                <!-- ############################################# -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="wrap-form">
+                                <div class="filter-btn-list">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="wrap-arrow my-dropdown-button fill-btn"
+                                                dropdown-menu-name="#value7">
+                                                Trang: trang chủ
+                                                <img class="arrow-down" src="./cms/images/index/arrow-down-dark.png"
+                                                    alt="">
+                                            </a>
+                                            <div class="dropdown-child-buble wrap-child d-none" id="value7">
+                                                <ul>
+                                                    <li><a href="#11">Trang chủ</a></li>
+                                                    <li><a href="#11">Giới thiệu</a></li>
+                                                    <li><a href="#12">Sản phẩm</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="wrap-arrow my-dropdown-button fill-btn"
+                                                dropdown-menu-name="#value8">
+                                                Block: thông tin cơ bản
+                                                <img class="arrow-down" src="./cms/images/index/arrow-down-dark.png"
+                                                    alt="">
+                                            </a>
+                                            <div class="dropdown-child-buble wrap-child d-none" id="value8">
+                                                <ul>
+                                                    <li><a href="#1">active</a></li>
+                                                    <li><a href="#2">inactive</a></li>
+                                                    <li><a href="#3">archived</a></li>
+                                                    <li><a href="#4">deleted</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="bg-wrap-form">
+                                <div class="list-row tag-content">
+                                    <div class="description">
+                                        nội dung abc${name}
+                                    </div>
+                                    <div class="wrap-content">
+                                        <div class="section_content">
+                                            <label for="">Nội dung hiển thị{value}</label>
+                                            <input type="text" name="" id="">
+                                        </div>
+                                        <a href="#" class="wrap-arrow my-dropdown-button" dropdown-menu-name="#name1">
+                                            <img class="arrow-down" src="./cms/images/index/arrow-down.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="extension d-none" id="name4">
+                                        <div class="item">
+                                            <label for="">CSS Class</label>
+                                            <input type="text" name="" id="">
+                                        </div>
+                                        <div class="item">
+                                            <label for="">Link</label>
+                                            <input type="text" name="" id="">
+                                        </div>
+                                        <div class="item">
+                                            <label for="">Target</label>
+                                            <input type="text" name="" id="">
+                                        </div>
+                                        <div class="item">
+                                            <label for="">Không hiển thị</label>
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <div class="item">
+                                            <label for="">expire date</label>
+                                            <input type="date" name="" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ############################################# -->
+
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer">
+
+    </div> -->
+
+
+</body>
+
+</html>
+
+
+<!-- /*-----*-----*-- lib-javascript --*-----*-----*/ -->
+<script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+
+<!-- <div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=541491550232673"
+    nonce="cLSj2Mgd"></script> -->
+<!-- /*-----*-----*-- my-script --*-----*-----*/ -->
+<!-- <script src="component/slider/script.js"></script> -->
+<script src="./cms/script/my-func.js"></script>
+<script src="asset/function.js"></script>
+
+<script>
+
+
+</script>
