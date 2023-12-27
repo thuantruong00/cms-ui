@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="./cms/style/body.css">
 
     <!-- /*-----*-----*-- edit-style --*-----*-----*/ -->
-    <link rel="stylesheet" href="edit-style/index.css">
+    <!-- <link rel="stylesheet" href="edit-style/index.css"> -->
 
 
     <!-- /*-----*-----*-- important --*-----*-----*/ -->
@@ -127,7 +127,7 @@
                                 <a href="#">
                                     <span>sản phẩm</span>
                                 </a>
-                                <a href="#" class="wrap-arrow my-dropdown-button" dropdown-menu-name="#name4">
+                                <a href="#" class="wrap-arrow my-dropdown-button dropdown-btn-buble" dropdown-menu-name="#name4">
                                     <img class="arrow-down" src="./cms/images/index/arrow-down.png" alt="">
                                 </a>
                             </div>
@@ -160,7 +160,7 @@
                                 <div class="filter-btn-list">
                                     <ul>
                                         <li>
-                                            <a href="#" class="wrap-arrow my-dropdown-button fill-btn"
+                                            <a href="#" class="wrap-arrow my-dropdown-button dropdown-btn-buble fill-btn"
                                                 dropdown-menu-name="#value7">
                                                 Trang: trang chủ
                                                 <img class="arrow-down" src="./cms/images/index/arrow-down-dark.png"
@@ -175,7 +175,7 @@
                                             </div>
                                         </li>
                                         <li>
-                                            <a href="#" class="wrap-arrow my-dropdown-button fill-btn"
+                                            <a href="#" class="wrap-arrow my-dropdown-button dropdown-btn-buble fill-btn"
                                                 dropdown-menu-name="#value8">
                                                 Block: thông tin cơ bản
                                                 <img class="arrow-down" src="./cms/images/index/arrow-down-dark.png"
@@ -183,10 +183,9 @@
                                             </a>
                                             <div class="dropdown-child-buble wrap-child d-none" id="value8">
                                                 <ul>
-                                                    <li><a href="#1">active</a></li>
-                                                    <li><a href="#2">inactive</a></li>
-                                                    <li><a href="#3">archived</a></li>
-                                                    <li><a href="#4">deleted</a></li>
+                                                    <li><a href="#3">địa chỉ</a></li>
+                                                    <li><a href="#4">liên hệ</a></li>
+                                                    <li><a href="#5">...</a></li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -196,38 +195,71 @@
                             </div>
                             <div class="bg-wrap-form">
                                 <div class="list-row tag-content">
-                                    <div class="description">
-                                        nội dung abc${name}
-                                    </div>
-                                    <div class="wrap-content">
-                                        <div class="section_content">
-                                            <label for="">Nội dung hiển thị{value}</label>
-                                            <input type="text" name="" id="">
+                                    <div class="wrap-content d-flex justify-content-between align-items-center">
+                                        <div class="section-content">
+                                            <label for="inp0">tiêu đề abc${name}</label>
+                                            <input type="text" name="" id="inp0" class="input-outline">
                                         </div>
-                                        <a href="#" class="wrap-arrow my-dropdown-button" dropdown-menu-name="#name1">
-                                            <img class="arrow-down" src="./cms/images/index/arrow-down.png" alt="">
+                                        <a href="#" class="wrap-arrow my-dropdown-button outline-btn" dropdown-menu-name="#sec1">
+                                            Mở rộng
+                                            <img class="arrow-down" src="./cms/images/index/arrow-down-dark.png" alt="">
                                         </a>
                                     </div>
-                                    <div class="extension d-none" id="name4">
+                                    <div class="extension d-none" id="sec1">
                                         <div class="item">
-                                            <label for="">CSS Class</label>
-                                            <input type="text" name="" id="">
+                                            <label for="inp1">CSS Class</label>
+                                            <input type="text" name="" id="inp1" class="input-outline">
                                         </div>
                                         <div class="item">
-                                            <label for="">Link</label>
-                                            <input type="text" name="" id="">
+                                            <label for="inp2">Link</label>
+                                            <input type="text" name="" id="inp2" class="input-outline">
                                         </div>
                                         <div class="item">
-                                            <label for="">Target</label>
-                                            <input type="text" name="" id="">
+                                            <label for="inp3">Target</label>
+                                            <input type="text" name="" id="inp3" class="input-outline">
                                         </div>
-                                        <div class="item">
-                                            <label for="">Không hiển thị</label>
-                                            <input type="checkbox" name="" id="">
+                                        <div class="item checkbox-item">
+                                            <label for="inp4">Không hiển thị</label>
+                                            <input type="checkbox" name="inp4" id="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+
+                            <div class="bg-wrap-form">
+                                <div class="list-row tag-content">
+                                    <div class="wrap-content d-flex justify-content-between align-items-center">
+                                        <div class="section-content">
+                                            <label for="inpa0">tiêu đề abcz${name}</label>
+                                            <input type="text" name="" id="inpa0" class="input-outline">
+                                        </div>
+                                        <a href="#" class="wrap-arrow my-dropdown-button outline-btn" dropdown-menu-name="#sec2">
+                                            Mở rộng
+                                            <img class="arrow-down" src="./cms/images/index/arrow-down-dark.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="extension d-none" id="sec2">
+                                        <div class="item">
+                                            <label for="inpa1">CSS Class</label>
+                                            <input type="text" name="" id="inpa1" class="input-outline">
+                                        </div>
+                                        <div class="item">
+                                            <label for="inpa2">Link</label>
+                                            <input type="text" name="" id="inpa2" class="input-outline">
+                                        </div>
+                                        <div class="item">
+                                            <label for="inpa3">Target</label>
+                                            <input type="text" name="" id="inpa3" class="input-outline">
+                                        </div>
+                                        <div class="item checkbox-item">
+                                            <label for="inpa4">Không hiển thị</label>
+                                            <input type="checkbox" name="inpa4" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
